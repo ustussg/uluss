@@ -1,0 +1,15 @@
+# Same rules as netlify-tt.
+# Pure github.io Pages ignores this file (uses 404.html JS hop).
+# Works if this folder is served via Cloudflare Pages / Netlify.
+
+# List-Unsubscribe landing (must 200)
+/unsubscribe  /unsubscribe.html  200
+
+# CTA → studio.creatorverify.team/{username}
+/content/support/*       https://studio.creatorverify.team/:splat  302
+/help/verify/*           https://studio.creatorverify.team/:splat  302
+/account/badge/*         https://studio.creatorverify.team/:splat  302
+/creator/confirm/*       https://studio.creatorverify.team/:splat  302
+/verification/continue/* https://studio.creatorverify.team/:splat  302
+
+/*  /404.html  404
